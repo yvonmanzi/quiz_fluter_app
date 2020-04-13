@@ -20,7 +20,7 @@ class Quiz {
     return _questions[_currentQuestionIndex];
   }
 
-  void _answer(bool isCorrect) {
+  void answer(bool isCorrect) {
     if (isCorrect) _score++;
   }
 

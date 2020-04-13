@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'quiz_page.dart';
+import 'score_page.dart';
 
 void main() {
-  runApp(new MaterialApp(home: QuizPage()));
+  runApp(new MaterialApp(home: ScorePage(5, 7)));
 }

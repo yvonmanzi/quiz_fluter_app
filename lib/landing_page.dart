@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'quiz_page.dart';
+
 class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,7 +13,8 @@ class LandingPage extends StatelessWidget {
       //it also seems like it is animated.
       child: InkWell(
         onTap: () {
-          print("we tapped the page");
+          Navigator.of(context).push(
+              MaterialPageRoute(builder: (BuildContext context) => QuizPage()));
         },
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
